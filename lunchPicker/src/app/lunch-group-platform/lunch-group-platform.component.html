@@ -1,0 +1,14 @@
+<p>Please decide your lunch!</p>
+<p>Date:{{createDt}}</p>
+
+
+
+Locations:
+<!--Location List-->
+<input type="text" placeholder="New Location..." #newLocation id="newLocation" >
+
+<button (click)="addLocation(newLocation.value)">Add Location</button><br />
+<button (click)="refreshLocation()">Refresh location list</button><br />
+<button (click)="decideLocation()">Let's Lunch!</button><br />
+
+<div>Final Location:{{finalLocation}}</div>

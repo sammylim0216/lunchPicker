@@ -1,1 +1,11 @@
-<p>create-lunch-group works!</p>
+<p>Create lunch party!</p>
+
+
+<form (ngSubmit) = "onSubmit()" [formGroup]="applyForm" >
+<p>Date:</p>
+<input type="datetime-local" id="partydate" #partydate formControlName="partydate">
+
+<p>Passcode:</p>
+<input type="text" id="passcode" #passcode formControlName="passcode">
+<button type="submit" >Submit</button>
+</form>

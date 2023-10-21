@@ -6,17 +6,24 @@ import { AppComponent } from './app.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserPortalComponent } from './user-portal/user-portal.component';
 import { CreateLunchGroupComponent } from './create-lunch-group/create-lunch-group.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LunchGroupLoginComponent } from './lunch-group-login/lunch-group-login.component';
+import { LunchGroupPlatformComponent } from './lunch-group-platform/lunch-group-platform.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserLoginComponent,
     UserPortalComponent,
-    CreateLunchGroupComponent
+    CreateLunchGroupComponent,
+    LunchGroupLoginComponent,
+    LunchGroupPlatformComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

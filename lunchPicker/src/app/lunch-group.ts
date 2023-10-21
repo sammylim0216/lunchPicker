@@ -1,6 +1,6 @@
 export interface LunchGroup {
-    organizer:string,
-    joiner:string[],
+    passcode:string,
     location:string[],
-    createdDt:Date
+    createdDt:Date,
+    id:string
 }
