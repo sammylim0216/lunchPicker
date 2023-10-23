@@ -4,11 +4,18 @@
 
 
 Locations:
+
+<p *ngFor="let location of locations">{{location}}</p>
 <!--Location List-->
 <input type="text" placeholder="New Location..." #newLocation id="newLocation" >
 
 <button (click)="addLocation(newLocation.value)">Add Location</button><br />
 <button (click)="refreshLocation()">Refresh location list</button><br />
-<button (click)="decideLocation()">Let's Lunch!</button><br />
+<button (click)="rollLocation()">Let's Roll!</button><br />
 
 <div>Final Location:{{finalLocation}}</div>
+
+<button (click)="decideLocation()">Decide!</button><br />
+
+<p>Share to your friend:</p>
+<input type="text" disabled value="{{shareUrl}}">
